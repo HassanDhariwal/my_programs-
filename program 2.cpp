@@ -4,6 +4,8 @@ using namespace std;
 int main()
 {
 	int Arry_size,Total_Minutes=0,Total_Hour=0,i=0,Daily_Hour=9;
+	float a;
+	//testing commit: 
 	cout<<"Enter number of Days you want to Caluulate:";
 	cin>>Arry_size;
 	cout<<"your 1 day working hour is:"<<Daily_Hour<<endl;
@@ -20,8 +22,7 @@ int main()
 		cout<<"Hour:"<<setw(2);
 		cin>>Hour[i];
 		cout<<"min"<<setw(2)<<":";//10:30;
-		cin>>Minute[i];
-		cout<<endl;		
+		cin>>Minute[i];		
 	}
 	cout<<"your All given records is"<<endl;
 	cout<<endl;
