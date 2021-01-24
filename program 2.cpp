@@ -11,8 +11,8 @@ int main()
 	cout<<"your total working days of Hours :"<<Daily_Hour<<":00"<<endl;
 	int Hour[Arry_size];
 	int Minute[Arry_size];
-	cout<<endl;
-	
+	//cout<<endl; remove;
+ 	
 	for(i=0;i<Arry_size;i++)//houres and minutes get value:
 	{
 		int Day=i+1;
