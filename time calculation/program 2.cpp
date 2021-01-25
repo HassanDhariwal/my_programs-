@@ -11,9 +11,9 @@ int main()
 	cout<<"your total working days of Hours :"<<Daily_Hour<<":00"<<endl;
 	int Hour[Arry_size];
 	int Minute[Arry_size];
-	//cout<<endl; remove;
+	cout<<endl;
  	
-	for(i=0;i<Arry_size;i++)//houres and minutes get value:
+	for(i=0;i<Arry_size;i++)                                    //houres and minutes get value:(16)
 	{
 		int Day=i+1;
 	    cout<<"enter your"<<" "<<Day<<" "<<"day time:"<<endl;
@@ -38,13 +38,13 @@ int main()
 	}
 	
 	
-	for(i=0;i<Arry_size;i++)//adtion of total houres;
+	for(i=0;i<Arry_size;i++)                                    //adtion of total houres;(41)
 	{
 		Total_Hour=Total_Hour+Hour[i];}
 	cout<<endl;
 	//cout<<"total hours is:"<<setw(2)<<tH<<endl;
 	
-	for(i=0;i<Arry_size;i++)//adition of total minutes;
+	for(i=0;i<Arry_size;i++)                                    //adition of total minutes;(47)
 	{
 	 Total_Minutes=Total_Minutes+Minute[i];
 	}
@@ -73,15 +73,30 @@ int main()
 		cout<<"your extra Working time:"<<extra_Work<<":"<<Total_Minutes<<endl;
 		
 	}
-	else
+	else if(Total_Hour<Daily_Hour)                //c is = 60 then prinet like this;(76)
+	{
+	int T_M=Total_Minutes;
+	int b=60-T_M;                                  //b  variable for get - value  (79)
+	int t_h=Total_Hour;
+	int calculate_M=Total_Minutes+b;                      //c variable for gett add - vlue and total minutes;(81)
+	if(calculate_M==60)                                  //ader to codition true hi hogi because c==60 must hoga(82)
+	
+	{
+		t_h=t_h+1;
+		if(t_h==Daily_Hour)
+		cout<<"your finich working time remains:"<<b<<endl;
+		
+		else                                 // because uper codition tb hi correct ho gi jb mintes reamin or time = ho give tim ky(89) 
 	{
 		Do_Work=Total_Hour-Daily_Hour;
 		cout<<endl;
-		cout<<"your finich working time remains:"<<Do_Work<<":"<<Total_Minutes<<endl;
+		cout<<"your finich working time remains is:"<<Do_Work<<":"<<b<<endl;
 	}
-	
 
-}
+	
+	}
+	}
+}//main
 
 
 
